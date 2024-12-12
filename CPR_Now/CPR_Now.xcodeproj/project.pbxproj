@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		140E38A2267EC252002FBB65 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E38A1267EC252002FBB65 /* Child.swift */; };
+		140E38A4267EC63A002FBB65 /* Infant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E38A3267EC63A002FBB65 /* Infant.swift */; };
+		14986C18267CCB0100D83E05 /* CPR WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 14986C17267CCB0100D83E05 /* CPR WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		14986C1E267CCB0100D83E05 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14986C1C267CCB0100D83E05 /* Interface.storyboard */; };
+		14986C20267CCB0200D83E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14986C1F267CCB0200D83E05 /* Assets.xcassets */; };
+		14986C27267CCB0200D83E05 /* CPR WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 14986C26267CCB0200D83E05 /* CPR WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		14986C2C267CCB0200D83E05 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14986C2B267CCB0200D83E05 /* InterfaceController.swift */; };
+		14986C2E267CCB0200D83E05 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14986C2D267CCB0200D83E05 /* ExtensionDelegate.swift */; };
+		14986C30267CCB0200D83E05 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14986C2F267CCB0200D83E05 /* NotificationController.swift */; };
+		14986C32267CCB0200D83E05 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14986C31267CCB0200D83E05 /* ComplicationController.swift */; };
+		14986C34267CCB0200D83E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14986C33267CCB0200D83E05 /* Assets.xcassets */; };
+		14986C48267CCB8100D83E05 /* Adult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14986C47267CCB8100D83E05 /* Adult.swift */; };
+		14986C4D267CCC1900D83E05 /* TypePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14986C4C267CCC1900D83E05 /* TypePerson.swift */; };
+		29C16FDA267E9B1B008CF604 /* WatchFaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C16FD9267E9B16008CF604 /* WatchFaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14986C19267CCB0100D83E05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14986C0D267CCB0100D83E05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14986C16267CCB0100D83E05;
+			remoteInfo = "CPR WatchKit App";
+		};
+		14986C28267CCB0200D83E05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14986C0D267CCB0100D83E05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14986C25267CCB0200D83E05;
+			remoteInfo = "CPR WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14986C3C267CCB0200D83E05 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				14986C27267CCB0200D83E05 /* CPR WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14986C40267CCB0200D83E05 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				14986C18267CCB0100D83E05 /* CPR WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		140E38A1267EC252002FBB65 /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
+		140E38A3267EC63A002FBB65 /* Infant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infant.swift; sourceTree = "<group>"; };
+		14986C13267CCB0100D83E05 /* CPR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14986C17267CCB0100D83E05 /* CPR WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CPR WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14986C1D267CCB0100D83E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		14986C1F267CCB0200D83E05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14986C21267CCB0200D83E05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14986C26267CCB0200D83E05 /* CPR WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CPR WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14986C2B267CCB0200D83E05 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		14986C2D267CCB0200D83E05 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		14986C2F267CCB0200D83E05 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		14986C31267CCB0200D83E05 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		14986C33267CCB0200D83E05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14986C35267CCB0200D83E05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14986C36267CCB0200D83E05 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		14986C47267CCB8100D83E05 /* Adult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adult.swift; sourceTree = "<group>"; };
+		14986C4C267CCC1900D83E05 /* TypePerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePerson.swift; sourceTree = "<group>"; };
+		29C16FD9267E9B16008CF604 /* WatchFaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFaceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14986C23267CCB0200D83E05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14986C0C267CCB0100D83E05 = {
+			isa = PBXGroup;
+			children = (
+				14986C1B267CCB0100D83E05 /* CPR WatchKit App */,
+				14986C2A267CCB0200D83E05 /* CPR WatchKit Extension */,
+				14986C14267CCB0100D83E05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14986C14267CCB0100D83E05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14986C13267CCB0100D83E05 /* CPR.app */,
+				14986C17267CCB0100D83E05 /* CPR WatchKit App.app */,
+				14986C26267CCB0200D83E05 /* CPR WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14986C1B267CCB0100D83E05 /* CPR WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				14986C1C267CCB0100D83E05 /* Interface.storyboard */,
+				14986C1F267CCB0200D83E05 /* Assets.xcassets */,
+				14986C21267CCB0200D83E05 /* Info.plist */,
+			);
+			path = "CPR WatchKit App";
+			sourceTree = "<group>";
+		};
+		14986C2A267CCB0200D83E05 /* CPR WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				29C16FD9267E9B16008CF604 /* WatchFaceController.swift */,
+				14986C2B267CCB0200D83E05 /* InterfaceController.swift */,
+				14986C2D267CCB0200D83E05 /* ExtensionDelegate.swift */,
+				14986C2F267CCB0200D83E05 /* NotificationController.swift */,
+				14986C31267CCB0200D83E05 /* ComplicationController.swift */,
+				14986C33267CCB0200D83E05 /* Assets.xcassets */,
+				14986C35267CCB0200D83E05 /* Info.plist */,
+				14986C36267CCB0200D83E05 /* PushNotificationPayload.apns */,
+				14986C47267CCB8100D83E05 /* Adult.swift */,
+				14986C4C267CCC1900D83E05 /* TypePerson.swift */,
+				140E38A1267EC252002FBB65 /* Child.swift */,
+				140E38A3267EC63A002FBB65 /* Infant.swift */,
+			);
+			path = "CPR WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14986C12267CCB0100D83E05 /* CPR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14986C41267CCB0200D83E05 /* Build configuration list for PBXNativeTarget "CPR" */;
+			buildPhases = (
+				14986C11267CCB0100D83E05 /* Resources */,
+				14986C40267CCB0200D83E05 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14986C1A267CCB0100D83E05 /* PBXTargetDependency */,
+			);
+			name = CPR;
+			productName = CPR;
+			productReference = 14986C13267CCB0100D83E05 /* CPR.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		14986C16267CCB0100D83E05 /* CPR WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14986C3D267CCB0200D83E05 /* Build configuration list for PBXNativeTarget "CPR WatchKit App" */;
+			buildPhases = (
+				14986C15267CCB0100D83E05 /* Resources */,
+				14986C3C267CCB0200D83E05 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14986C29267CCB0200D83E05 /* PBXTargetDependency */,
+			);
+			name = "CPR WatchKit App";
+			productName = "CPR WatchKit App";
+			productReference = 14986C17267CCB0100D83E05 /* CPR WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		14986C25267CCB0200D83E05 /* CPR WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14986C39267CCB0200D83E05 /* Build configuration list for PBXNativeTarget "CPR WatchKit Extension" */;
+			buildPhases = (
+				14986C22267CCB0200D83E05 /* Sources */,
+				14986C23267CCB0200D83E05 /* Frameworks */,
+				14986C24267CCB0200D83E05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CPR WatchKit Extension";
+			productName = "CPR WatchKit Extension";
+			productReference = 14986C26267CCB0200D83E05 /* CPR WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14986C0D267CCB0100D83E05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					14986C12267CCB0100D83E05 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					14986C16267CCB0100D83E05 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					14986C25267CCB0200D83E05 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 14986C10267CCB0100D83E05 /* Build configuration list for PBXProject "CPR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14986C0C267CCB0100D83E05;
+			productRefGroup = 14986C14267CCB0100D83E05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14986C12267CCB0100D83E05 /* CPR */,
+				14986C16267CCB0100D83E05 /* CPR WatchKit App */,
+				14986C25267CCB0200D83E05 /* CPR WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14986C11267CCB0100D83E05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14986C15267CCB0100D83E05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14986C20267CCB0200D83E05 /* Assets.xcassets in Resources */,
+				14986C1E267CCB0100D83E05 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14986C24267CCB0200D83E05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14986C34267CCB0200D83E05 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14986C22267CCB0200D83E05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14986C4D267CCC1900D83E05 /* TypePerson.swift in Sources */,
+				14986C30267CCB0200D83E05 /* NotificationController.swift in Sources */,
+				140E38A2267EC252002FBB65 /* Child.swift in Sources */,
+				14986C32267CCB0200D83E05 /* ComplicationController.swift in Sources */,
+				14986C48267CCB8100D83E05 /* Adult.swift in Sources */,
+				29C16FDA267E9B1B008CF604 /* WatchFaceController.swift in Sources */,
+				140E38A4267EC63A002FBB65 /* Infant.swift in Sources */,
+				14986C2E267CCB0200D83E05 /* ExtensionDelegate.swift in Sources */,
+				14986C2C267CCB0200D83E05 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14986C1A267CCB0100D83E05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14986C16267CCB0100D83E05 /* CPR WatchKit App */;
+			targetProxy = 14986C19267CCB0100D83E05 /* PBXContainerItemProxy */;
+		};
+		14986C29267CCB0200D83E05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14986C25267CCB0200D83E05 /* CPR WatchKit Extension */;
+			targetProxy = 14986C28267CCB0200D83E05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14986C1C267CCB0100D83E05 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14986C1D267CCB0100D83E05 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14986C37267CCB0200D83E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14986C38267CCB0200D83E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14986C3A267CCB0200D83E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HD8W566RB;
+				INFOPLIST_FILE = "CPR WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AnanyaAutomation.CPR.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		14986C3B267CCB0200D83E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HD8W566RB;
+				INFOPLIST_FILE = "CPR WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AnanyaAutomation.CPR.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		14986C3E267CCB0200D83E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HD8W566RB;
+				IBSC_MODULE = CPR_WatchKit_Extension;
+				INFOPLIST_FILE = "CPR WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AnanyaAutomation.CPR.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		14986C3F267CCB0200D83E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HD8W566RB;
+				IBSC_MODULE = CPR_WatchKit_Extension;
+				INFOPLIST_FILE = "CPR WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AnanyaAutomation.CPR.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		14986C42267CCB0200D83E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9HD8W566RB;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AnanyaAutomation.CPR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		14986C43267CCB0200D83E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9HD8W566RB;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AnanyaAutomation.CPR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14986C10267CCB0100D83E05 /* Build configuration list for PBXProject "CPR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14986C37267CCB0200D83E05 /* Debug */,
+				14986C38267CCB0200D83E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14986C39267CCB0200D83E05 /* Build configuration list for PBXNativeTarget "CPR WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14986C3A267CCB0200D83E05 /* Debug */,
+				14986C3B267CCB0200D83E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14986C3D267CCB0200D83E05 /* Build configuration list for PBXNativeTarget "CPR WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14986C3E267CCB0200D83E05 /* Debug */,
+				14986C3F267CCB0200D83E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14986C41267CCB0200D83E05 /* Build configuration list for PBXNativeTarget "CPR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14986C42267CCB0200D83E05 /* Debug */,
+				14986C43267CCB0200D83E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14986C0D267CCB0100D83E05 /* Project object */;
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CPR_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="60" height="57" alignment="center" image="heart.circle" catalog="system" id="hTR-y8-5y8">
+                            <color key="tintColor" red="1" green="0.1025861391" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <button width="1" alignment="left" verticalAlignment="center" title="CPR" id="Xgx-yF-rhR">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="15"/>
+                            <connections>
+                                <action selector="cprFunc" destination="AgC-eL-Hgc" id="F1T-TJ-zIx"/>
+                                <segue destination="CG6-Kb-Llr" kind="push" identifier="firstSegue" id="abA-Qy-JYq"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="cprBtn" destination="Xgx-yF-rhR" id="2hH-at-Ohp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--typePerson-->
+        <scene sceneID="Z4x-2U-MAR">
+            <objects>
+                <controller identifier="typePerson" id="CG6-Kb-Llr" customClass="TypePerson" customModule="CPR_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Adult" id="cYP-bM-adH">
+                            <color key="backgroundColor" red="1" green="0.45875031017229295" blue="0.54561133445138277" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="adultFunc" destination="CG6-Kb-Llr" id="t8Y-u1-Ja1"/>
+                                <segue destination="DuO-Rp-wle" kind="push" id="FpL-xh-geM"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Child" id="l6d-Bh-LrG">
+                            <color key="backgroundColor" red="1" green="0.31607786875125365" blue="0.37206274809900419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="OWV-eD-qFB" kind="push" id="nsq-g0-DV9"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Infant" id="MsT-m7-xXg">
+                            <color key="backgroundColor" red="1" green="0.16272626015950065" blue="0.18909839342462553" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="EuD-HA-9jf" kind="push" id="O91-UY-11v"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="adultBtn" destination="cYP-bM-adH" id="s1I-sE-WoB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+        <!--Watch Face Controller-->
+        <scene sceneID="w9j-Zc-hVj">
+            <objects>
+                <controller id="DuO-Rp-wle" customClass="WatchFaceController" customModule="CPR_WatchKit_Extension">
+                    <items>
+                        <imageView alignment="left" image="inner10suffix" id="cp8-RH-byX"/>
+                    </items>
+                    <connections>
+                        <outlet property="watchFace" destination="cp8-RH-byX" id="aVp-hD-PKV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="731" y="59"/>
+        </scene>
+        <!--Child-->
+        <scene sceneID="Au5-F6-ozA">
+            <objects>
+                <controller id="OWV-eD-qFB" customClass="Child" customModule="CPR_WatchKit_Extension">
+                    <items>
+                        <imageView alignment="left" image="inner10suffix" id="ghy-vQ-sGV"/>
+                    </items>
+                    <connections>
+                        <outlet property="childFace" destination="ghy-vQ-sGV" id="D9J-jr-357"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="972" y="231"/>
+        </scene>
+        <!--Infant-->
+        <scene sceneID="bvv-9C-6Md">
+            <objects>
+                <controller id="EuD-HA-9jf" customClass="Infant" customModule="CPR_WatchKit_Extension">
+                    <items>
+                        <imageView alignment="left" image="inner10suffix" id="LOT-S2-UIH"/>
+                    </items>
+                    <connections>
+                        <outlet property="infantFace" destination="LOT-S2-UIH" id="gG0-pF-bZk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="731" y="355"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="CPR_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="CPR_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="643"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.circle" catalog="system" width="128" height="121"/>
+        <image name="inner10suffix" width="300" height="300"/>
+    </resources>
+</document>
